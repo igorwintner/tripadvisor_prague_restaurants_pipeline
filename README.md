@@ -11,7 +11,7 @@ This data engineering project implements a comprehensive ETL (Extract, Transform
     [View Extract Code](/mage_pipeline/1_extract_raw_data_gs.py)
 
 2. **Transform Data:**
-   - **Clean and Process Data:** The collected data is cleaned and transformed using **Pandas** to ensure accuracy and consistency. There is also a [link](/transform_notebook.ipynb) to the **Jupyter Notebook**, which contains the data transformation code and where the code was originally written. 
+   - **Clean and Process Data:** The collected data is cleaned and transformed using **Pandas** to ensure accuracy and consistency. Here is also a [link](/transform_notebook.ipynb) to the **Jupyter Notebook**, which contains the data transformation code and where the code was originally written. 
 
     [View Transform Code](/mage_pipeline/2_transform_raw_data.py)
 
@@ -58,6 +58,7 @@ Raw Tripadvisor data was stored on **Google Storage**. See image below. The orig
 The transformed data is loaded into **BigQuery** tables. Data analysis was also performed in BigQuery using **SQL**. Queries can be seen [here](/bigquery_analysis.sql). At the same time, a new `analytics_table` was created containing only the columns that will be needed to create the dashboard in **Looker Studio**. SQL query can be found [here](/create_analytics_table.sql).
 
 ![Alt Text](/images/bigquery_tables.png)
+
 *Transformed data in BigQuery tables*
 
 ## Looker Studio Dashboard
