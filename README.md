@@ -54,7 +54,7 @@ Raw Tripadvisor data was stored on **Google Storage**. See image below. The orig
 ![Alt Text](/images/raw_data_bucket.png)
 *Raw data bucket*
 
-### BigQuery Tables and SQL Analysis
+## BigQuery Tables and SQL Analysis
 The transformed data is loaded into **BigQuery** tables. Data analysis was also performed in BigQuery using **SQL**. Queries can be seen [here](/bigquery_analysis.sql). At the same time, a new `analytics_table` was created containing only the columns that will be needed to create the dashboard in **Looker Studio**. SQL query can be found [here](/create_analytics_table.sql).
 
 ![Alt Text](/images/bigquery_tables.png)
